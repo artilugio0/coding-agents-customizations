@@ -11,6 +11,13 @@ You are implementing all features in the current iteration.
 Read `specs/iterations/current.md`. If it doesn't exist, stop:
 > "No active iteration. Run `/spec-iteration-start` first."
 
+## Step 1b — Verify tests exist
+
+Check whether `current.md` contains a `## Tests Written` section with at least one entry.
+
+If not, stop:
+> "Tests have not been written for this iteration. Run `/spec-iteration-write-tests` first, then review the tests before implementing."
+
 ## Step 2 — Read all specs to implement
 
 Read every spec file listed under `## To Implement` in `current.md`. Also read `specs/PROJECT.md`
@@ -43,12 +50,15 @@ Implement all features. For each:
 - Do not implement anything listed in Out of Scope
 - Make your own decisions on code structure, naming, and patterns
 
+After implementing each feature, run the tests for that feature. All pre-existing tests for that feature must pass before moving on to the next feature.
+
 ## Step 6 — Reconcile with specs
 
 After all implementation, report for each spec:
 - **Followed:** which spec sections were implemented as written
 - **Deviated:** where implementation differed from the spec and why — update the affected spec to match reality
 - **Discovered:** things the spec didn't cover that you had to decide — add to that spec's Open Questions, or resolve and update the spec if the answer is clear
+- **Test changes:** if any test was modified during implementation (e.g. a spec ambiguity required a judgement call), list each change and why — update the affected spec's Open Questions or resolve the ambiguity inline
 
 ## Step 7 — Update PROJECT.md Structure
 

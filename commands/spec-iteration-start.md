@@ -72,6 +72,7 @@ Batch all questions into one message. Skip questions where the intent is already
 
 ## Status
 - [ ] Spec complete
+- [ ] Tests written
 - [ ] Implemented
 - [ ] Tested
 ```
@@ -110,6 +111,9 @@ First ensure the `specs/iterations/` directory exists. Then write:
 
 ## Notes
 <anything unresolved or worth flagging>
+
+## Tests Written
+(populated by /spec-iteration-write-tests)
 ```
 
 Omit "New Specs" if there are none. Omit "Updated Specs" if there are none.

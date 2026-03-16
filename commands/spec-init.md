@@ -92,6 +92,7 @@ implementation begins.
 |---|---|
 | `/spec-iteration-start [description]` | Start an iteration — creates and updates specs |
 | `/spec-review [name?]` | Review and improve spec(s) |
+| `/spec-iteration-write-tests` | Write tests for the current iteration before implementation |
 | `/spec-iteration-implement` | Implement all features in the current iteration |
 | `/spec-iteration-close` | Archive the completed iteration |
 ```
