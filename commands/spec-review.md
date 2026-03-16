@@ -8,7 +8,9 @@ You are reviewing feature spec(s) for quality and completeness.
 
 Target: **$ARGUMENTS** (if blank, review all specs in `specs/features/`)
 
-## Step 1 — Read the specs
+## Step 1 — Read the specs and current iteration
+
+Read `specs/iterations/current.md` if it exists — review its Goal, Notes, and any open items alongside the feature specs.
 
 If `$ARGUMENTS` is provided:
 - Read `specs/features/$ARGUMENTS.md`
@@ -52,11 +54,18 @@ List every issue found, grouped by severity:
 For each "Must fix" issue, ask the user one focused question to resolve it.
 Ask all questions at once so they can answer in one message.
 
-## Step 5 — Update the spec
+## Step 5 — Update the specs
 
 Incorporate the user's answers into the spec file(s).
 Mark `- [x] Spec complete` in the Status section if all "Must fix" issues are resolved.
 
-## Step 6 — Confirm
+## Step 6 — Update `specs/iterations/current.md`
 
-Summarize what was changed and flag any "Should fix" items the user chose to defer.
+If `current.md` exists, update it to reflect everything learned during the review:
+- Resolved questions or clarified intent → update the `## Notes` section
+- New or changed scope → update the relevant `## New Specs` / `## Updated Specs` / `## To Implement` entries
+- Any "Should fix" or "Consider" items the user deferred → append to `## Notes` so they're visible before implementation
+
+## Step 7 — Confirm
+
+Summarize what was changed in the spec file(s) and in `current.md`, and flag any "Should fix" items the user chose to defer.
